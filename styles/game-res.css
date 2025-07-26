@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: pink;
+}
+
+/* Score Box */
+.score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgb(150, 29, 49); /* Set background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Back Button Container */
+.nav {
+  background-color: rgb(150, 29, 49); /* Set background */
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Link Inside .nav */
+.nav a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Hover Effect */
+.nav a:hover,
+.nav:hover {
+  background-color: rgb(212, 137, 150);
+  color: rgb(53, 50, 46);
+  border-radius: 10px;
+}
+
+/* Character Container */
+.containerr {
+  background-color: #f4f4f9;
+  border-radius: 20px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 250px;
+}
+
+/* Character Parts */
+#head {
+  background-color: #393959;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#eyes1, #eyes2 {
+  background-color: black;
+  display: inline-block;
+  height: 25px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+
+#upper-body {
+  display: flex;
+}
+
+#stomach {
+  background-color: #4a4e69;
+  height: 100px;
+  width: 60px;
+  border-radius: 20px;
+  margin-bottom: 3px;
+  display: none;
+}
+
+#right-hand, #left-hand {
+  background-color: #a3cef1;
+  height: 60px;
+  width: 20px;
+  border-radius: 50px;
+  margin: 0 3px;
+  display: none;
+}
+
+#lower-body {
+  display: flex;
+}
+
+#right-leg, #left-leg {
+  background-color: #22223b;
+  height: 20px;
+  width: 40px;
+  border-radius: 50px;
+  display: none;
+}
+
+#left-leg {
+  margin-left: 10px;
+}
+#right-leg {
+  margin-right: 10px;
+}
+
+/* Input Display */
+.input {
+  background-color: #f4f4f9;
+  border-radius: 20px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  font-size: xx-large;
+  font-weight: bolder;
+  min-height: 250px;
+}
+
+/* Keyboard */
+.keyboards {
+  background-color: rgb(150, 29, 49);
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.btn button {
+  background-color: pink;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: bolder;
+}
+
+.btn button:hover {
+  background-color: rgb(184, 107, 120);
+}
+
+/* Optional: Mobile Adjustments */
+@media (max-width: 768px) {
+  .input {
+    font-size: large;
+    letter-spacing: 2px;
+  }
+  .score {
+    font-size: 1rem;
+  }
+}

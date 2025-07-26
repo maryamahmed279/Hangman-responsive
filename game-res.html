@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hangman game🤠</title>
+  <link rel="stylesheet" href="./styles/game-res.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap-grid.min.css" integrity="sha512-79vX0oXpL1ee3k+V7jJxmmT+xdb7UrE7Fce5RYu3/l1oO/EWaMGEjDDObLXe2JSrDZtoRntVv0Iolv6i4TDWKw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="container-fluid bg-danger text-white py-2 px-3 d-flex justify-content-between align-items-center">
+    <div class="score">Score: 0</div>
+    <div class="nav">
+      <a href="index.html" class="text-white text-decoration-none">BACK</a>
+    </div>
+  </div>
+
+  <!-- Game Area -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Character Display -->
+      <div class="col-md-4 mb-3">
+        <div class="containerr">
+          <div id="head"><span id="eyes1"></span><span id="eyes2"></span></div>
+          <div id="upper-body">
+            <div id="right-hand"></div>
+            <div id="stomach"></div>
+            <div id="left-hand"></div>
+          </div>
+          <div id="lower-body">
+            <div id="right-leg"></div>
+            <div id="left-leg"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Word Input Display -->
+      <div class="col-md-8 mb-3">
+        <div class="input">
+          <span id="type"></span>
+          <span id="spaces"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Keyboard -->
+  <div class="container my-4">
+    <div class="keyboards d-flex flex-wrap justify-content-center gap-2">
+      <!-- Buttons injected by JS or manually placed -->
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js" integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./scripts/game.js"></script>
+</body>
+</html>
